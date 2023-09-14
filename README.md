@@ -89,3 +89,13 @@ console.log(myInput.betterInputOptions.valueAsNumber);
 Input values are saved after refreshes for some time, so this option allows you to reset the value of the inputs each time the browser tab refreshes.<br>
 This option is a boolean type (`true, false`)
 <br>
+
+<br>
+
+## Disabling Features.
+For all the number inputs which you don't need this feature for, you can do the following:
+
+```html
+<input type="number" disable-better-number-input>
+```
+the inputs with `disable-better-number-input` attribute are not selected in the input list, so they will not be enhanced as the other number inputs will be in your project.
