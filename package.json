@@ -1,0 +1,24 @@
+{
+  "name": "better-number-input",
+  "version": "1.0.0",
+  "description": "(not a package) this will help you create strict(er) number inputs by providing options on invalid inputs",
+  "main": "better-number-input.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chill31/better-number-input.git"
+  },
+  "keywords": [
+    "number-input",
+    "utility",
+    "HTML5"
+  ],
+  "author": "chill31",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chill31/better-number-input/issues"
+  },
+  "homepage": "https://github.com/chill31/better-number-input#readme"
+}
