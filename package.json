@@ -1,6 +1,6 @@
 {
   "name": "better-number-input",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "(not a package) this will help you create strict(er) number inputs by providing options on invalid inputs",
   "main": "better-number-input.js",
   "scripts": {

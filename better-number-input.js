@@ -113,14 +113,16 @@ allNormalNumberInputs.forEach((input) => {
 
     }
 
+    input.betterInputOptions.valueAsNumber = Number(input.value);
+
   });
 
   input.addEventListener("paste", (e) => {
     if (isNaN(e.clipboardData.getData("text/plain"))) {
       e.preventDefault();
     }
-  });
 
-  input.betterInputOptions.valueAsNumber = Number(input.value);
+    input.betterInputOptions.valueAsNumber = Number(input.value);
+  });
 
 });
