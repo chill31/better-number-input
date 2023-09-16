@@ -4,7 +4,8 @@ Use it in your html:
 ```js
 <script src="https://cdn.jsdelivr.net/gh/chill31/better-number-input/better-number-input.js"></script>
 ```
-at the end of the body tag **BUT** before all scripts, so it selects all number inputs and implements strict number only behaviour.
+at the end of the body tag **BUT** before all scripts, so it selects all number inputs and implements strict number only behaviour.<br>
+Read the [documentation](https://better-number-input.vercel.app) for better code examples and detail.
 <br>
 <br>
 
