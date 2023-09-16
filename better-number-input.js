@@ -10,7 +10,6 @@ const exampleOptionsForBetterNumberInputs = {
   resetValues: true
 }
 
-// adding event listeners to all inputs
 allNormalNumberInputs.forEach((input) => {
 
   input.setAttribute("type", "text");
@@ -32,11 +31,11 @@ allNormalNumberInputs.forEach((input) => {
     input.betterInputOptions.allowScientificNotation = exampleOptionsForBetterNumberInputs.allowScientificNotation;
   }
 
-  if(typeof input.betterInputOptions.resetValues !== typeof true) {
+  if (typeof input.betterInputOptions.resetValues !== typeof true) {
     input.betterInputOptions.resetValues = exampleOptionsForBetterNumberInputs.resetValues;
   }
 
-  if(input.betterInputOptions.resetValues) {
+  if (input.betterInputOptions.resetValues) {
     input.value = "";
   }
 
@@ -109,11 +108,15 @@ allNormalNumberInputs.forEach((input) => {
           e.preventDefault();
         }
 
+        if (e.target.value.split("").includes('-') && e.target.value.split("").indexOf('-') === 0) {
+          if (e.target.selectionStart === 0) {
+            e.preventDefault();
+          }
+        }
+
       }
 
     }
-
-    input.betterInputOptions.valueAsNumber = Number(input.value);
 
   });
 
@@ -123,6 +126,15 @@ allNormalNumberInputs.forEach((input) => {
     }
 
     input.betterInputOptions.valueAsNumber = Number(input.value);
+  });
+
+  input.addEventListener("input", (e) => {
+    if (isNaN(Number(e.target.value))) {
+      input.betterInputOptions.valueAsNumber = 0;
+    } else {
+      input.betterInputOptions.valueAsNumber = Number(e.target.value);
+    }
+    console.log(input.betterInputOptions.valueAsNumber);
   });
 
 });
