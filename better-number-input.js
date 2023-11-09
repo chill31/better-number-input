@@ -134,7 +134,6 @@ allNormalNumberInputs.forEach((input) => {
     } else {
       input.betterInputOptions.valueAsNumber = Number(e.target.value);
     }
-    console.log(input.betterInputOptions.valueAsNumber);
   });
 
 });
